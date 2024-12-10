@@ -2,7 +2,7 @@
 # Group members
 ### *Yu-hsiang Tang (jtang3) | *Chi-Yeh Chen (chiyehc)
 
-# Dataset Features Description
+## Dataset Features Description
 
 This dataset contains detailed information about soccer players, including their personal details, attributes, club associations, and skills. Below is an overview of the key features in the dataset:
 
@@ -76,12 +76,12 @@ This dataset contains detailed information about soccer players, including their
 - **nation_flag_url**: URL to the national team's flag.
 
 This list covers the main columns in the dataset. Each column provides specific information that can be used for various analyses, such as player performance evaluation, market value estimation, and team compositions.
-# File Description
+## File Description
 1. FIFA_dataset: the FIFA dataset from kaggle. It contains several csv file of female players information from 2016-2022 and male palyers information from 2015-2022.
 2. chiyehc_group_project.ipynb: The main script of this project.
 3. create_players_table.sql: A PostgreSQL file which is used to generate postgres schema and table.
 
-# Discussion: Benefit of using PostgreSQL DB vs NoSQL database
+## Discussion: Benefit of using PostgreSQL DB vs NoSQL database
 This dataset has a well-defined structure with fixed columns (e.g., sofifa_id, short_name, overall, potential, etc.), each with specified data types. This is characteristic of structured data, making it more suitable for storage in a relational (SQL) database.
 NoSQL databases are more suitable for handling unstructured or semi-structured data, such as documents, JSON, BSON, graphs, or when the data structure is frequently changing. If your dataset were more flexible, dynamic, or contained large amounts of unstructured information (e.g., social media data, sensor data), then a NoSQL database might be a better choice.
 
@@ -110,7 +110,7 @@ NoSQL databases are more suitable for handling unstructured or semi-structured d
     - Convert into pandas, saving as a csv file, and then read it back.
     - Remember to modify the data path
 4. Then, run all the cell in the file
-# Task3 Pipeline and Results
+### Task3 Pipeline and Results
 1. **Data Cleaning (Dealing with missing value):**
     - Thresholding: drop the columns that contains over 50% missing value
     - Interpolate the missing values with average values
